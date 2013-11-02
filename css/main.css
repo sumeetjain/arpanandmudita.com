@@ -80,58 +80,81 @@ textarea {
    ========================================================================== */
 
 body{
-  background: #efd51e;
+  background: #3299BB;
 }
 
 h1{
-  font-family: 'Raleway Dots', cursive;
-  font-size: 42px;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 36px;
   font-weight: normal;
-  color: #333;
-  margin: 20px 0 10px;
+  color: #fff;
+  margin: 20px 0 5px;
   padding: 0;
   line-height: 1;
 }
 
 h2{
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-weight: normal;
+  margin: 15px 0 25px;
+  line-height: 1;
+}
+
+h2 a{
+  display: inline-block;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 30px;
-  color: #000;
-  opacity: 0.75;
-  margin: 15px 0 10px;
+  font-size: 24px;
+  color: #3299BB;
+  background: #fff;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Cherry Swash', cursive;
+  font-weight: normal;
+  font-size: 20px;
+  color: #3299BB;
+  margin: 0 0 10px;
   padding: 0;
   line-height: 1;
 }
 
-h3{
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #000;
-  opacity: 0.2;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+p{
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #424242;
 }
 
 img{
   width: 100%;
   padding: 5px;
-  border: 1px solid #333;
+  border: 1px solid #BCBCBC;
 }
 
 .main{
   text-align: center;
 }
 
+.section {
+    width: 90%;
+    margin: 0 5%;
+    padding: 30px 0;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+img{
+  width: 90%;
+}
+
+#sections{
+  background: #fff;
+}
 
 
 
-
-
+#details strong{
+  color: #BCBCBC;
+}
 
 
 
@@ -142,88 +165,30 @@ img{
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-  h1{
-    font-size: 56px;
-    margin-top: 40px;
+  .section {
+      width: 90%;
+      margin: 0 5%;
   }
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+  img{
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
 
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
+  .section {
+      width: 477px;
+      margin: 0 auto;
+  }
 
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-
-    img{
-      width: 70%;
-    }
+  img{
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -232,14 +197,6 @@ img{
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-
-    img{
-      width: 60%;
-    }
 }
 
 /* ==========================================================================
